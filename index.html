@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+<title>Кнопки с цветами</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #D6D6D6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .wrap {
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+  }
+  .btn {
+    width: 100%;
+    min-height: 52px;
+    border: 1px solid #fff;
+    border-radius: 9999px;
+    font-size: 14px;
+    font-weight: 900;
+    cursor: pointer;
+    white-space: normal;
+    overflow: hidden;
+    text-align: center;
+    line-height: 1.3;
+    padding: 10px;
+    color: #fff;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .btn.light { color: #000; }
+  .btn:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  .btn:active {
+    transform: scale(0.97);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="grid">
+      <button class="btn" style="background:#fc0404">#1 Ferrari Red Gloss</button>
+      <button class="btn" style="background:#4b6e74">#2 Shiny Green Pearl</button>
+      <button class="btn" style="background:#628c44">#3 Dark Green Pearl</button>
+      <button class="btn" style="background:#01141a">#4 Goodwood Green Pearl</button>
+      <button class="btn" style="background:#597463">#5 Cadmium Green Gloss</button>
+      <button class="btn" style="background:#f08205">#6 Lotus Orange</button>
+      <button class="btn" style="background:#000000">#7 maple yellow gloss</button>
+      <button class="btn light" style="background:#d3d007">#8 Crystal lemon Gloss</button>
+      <button class="btn" style="background:#47411d">#9 Urban Green Gloss</button>
+      <button class="btn" style="background:#597463">#10 Lime Gray</button>
+      <button class="btn" style="background:#32bce1">#11 Sky Blue Gloss</button>
+
+      <button class="btn light" style="background:#90efd9">#12 Tiffany Gloss</button>
+      <button class="btn light" style="background:#c9cbca">#13 Volcano Gray Gloss</button>
+      <button class="btn" style="background:#8c98b2">#14 Sublime Gloss</button>
+      <button class="btn" style="background:#555361">#15 Brooklyn Grey Gloss</button>
+      <button class="btn" style="background:#555361">#16 Nardo Gray Gloss</button>
+      <button class="btn" style="background:#06358f">#17 Marina Blue Pearl</button>
+      <button class="btn" style="background:#644b60">#18 Black Red Pearl</button>
+      <button class="btn" style="background:#9a0e7b">#19 Violet Pearl</button>
+      <button class="btn" style="background:#2a1f3f">#20 Purple Pearl</button>
+      <button class="btn" style="background:#6b8aa9">#21 Porshe Crystal Pearl</button>
+      <button class="btn" style="background:#687182">#22 Gray Pearl</button>
+
+      <button class="btn" style="background:#555361">#23 Silver Pearl</button>
+      <button class="btn" style="background:#79787d">#24 Gray Matt</button>
+      <button class="btn" style="background:#9a9c9b">#25 Silver Matt</button>
+      <button class="btn" style="background:#080405">#26 Black Matt</button>
+      <button class="btn" style="background:#0c3869">#27 Shadow Blue Matt</button>
+      <button class="btn" style="background:#b58c18">#28 Gold Matt</button>
+      <button class="btn" style="background:#6062b7">#29 Green Purple</button>
+      <button class="btn" style="background:#554a8c">#30 Green Blue</button>
+      <button class="btn" style="background:#263838">#31 Mountain Green</button>
+      <button class="btn" style="background:#1a0406">#32 Purple Haze Gloss</button>
+      <button class="btn" style="background:#516830">#33 Purple Haze Matt</button>
+
+      <button class="btn" style="background:#000000">#34 Carbon Black</button>
+      <button class="btn light" style="background:#e5eef5">#35 White Gloss Pearl</button>
+      <button class="btn light" style="background:#eff3f6">#36 White Matt Pearl</button>
+      <button class="btn" style="background:#3a394a">#37 Matte Black Charm Red</button>
+      <button class="btn" style="background:#03060d">#38 Black Gloss</button>
+      <button class="btn" style="background:#60b630">#39 Verde mantis</button>
+      <button class="btn" style="background:#000000">#40 Khaki Green</button>
+      <button class="btn light" style="background:#b8dba9">#41 Porshe Green</button>
+      <button class="btn" style="background:#e42772">#42 Pink Glossy</button>
+      <button class="btn light" style="background:#d9d5c2">#43 Ashes</button>
+      <button class="btn" style="background:#818083">#44 Metal Gray</button>
+
+      <button class="btn light" style="background:#d8d8da">#45 Matte AMG Gray</button>
+      <button class="btn" style="background:#99995f">#46 Porsche Urban</button>
+      <button class="btn" style="background:#bea2b9">#47 Bentley Pink</button>
+      <button class="btn" style="background:#d40f2b">#48 Metal Red</button>
+      <button class="btn" style="background:#00735b">#49 BMW Green</button>
+      <button class="btn" style="background:#f08205">#50 Orange</button>
+      <button class="btn" style="background:#290313">#51 Jaguar Black Rose</button>
+      <button class="btn" style="background:#761730">#52 Metal Crimson</button>
+      <button class="btn" style="background:#2252a3">#53 Metal Blue</button>
+      <button class="btn" style="background:#c6a40e">#54 Metal Gold</button>
+      <button class="btn" style="background:#2f5345">#55 Tesla Forest Green</button>
+	
+<button class="btn" style="background:#0a061a">#56 GT Purple</button>
+      <button class="btn" style="background:#accd06">#57 Phantom Lemon</button>
+      <button class="btn" style="background:#090506">#58 Desert Yellow</button>
+      <button class="btn light">#59 Clear Carbon</button>
+      <button class="btn light">#60 Silver Chrome</button>
+      <button class="btn light">#61 Super chrome black</button>
+      <button class="btn light">#62 Super chrome gold</button>
+
+      <button class="btn light" style="background:#FBFCF6">#101 Matt Metal White</button>
+      <button class="btn light" style="background:#FDFBF9">#102 TPU Matt White</button>
+      <button class="btn light" style="background:#eeebd9">#103 Matt Metal Pearl White</button>
+      <button class="btn" style="background:#392A48">#104 Matt Metal Capri Grey Purple</button>
+      <button class="btn" style="background:#04aeec">#105 Matt Metal Racing Blue</button>
+      <button class="btn" style="background:#2c6fbb">#106 Matt Blue Chrom</button>
+      <button class="btn" style="background:#778ba5">#107 Matt Metal Shadow Blue</button>
+      <button class="btn" style="background:#0d0c0b">#108 Matt Metal Black Blue</button>
+      <button class="btn" style="background:#BB8D6F">#109 Matt Metal Shadow Brown</button>
+      <button class="btn" style="background:#392A48">#110 Matt Metal Night Purple</button>
+      <button class="btn" style="background:#35063e">#111 Matt Metal Black Purple</button>
+      <button class="btn" style="background:#B33F40">#112 Matt Metal Romanee Red</button>
+      <button class="btn" style="background:#A72920">#113 Matt Metal Flame Red</button>
+      <button class="btn light">#114 Matt Metal COVERT GREEN</button>
+      <button class="btn" style="background:#1A2421">#115 Matt Metal Blackish Green</button>
+      <button class="btn" style="background:#A8A65C">#116 Matt Metal Olive Green</button>
+      <button class="btn" style="background:#728C00">#117 Matt Metal Venom Green</button>
+      <button class="btn" style="background:#4B5320">#118 Matt Metal Army Green</button>
+      <button class="btn" style="background:#8A865D">#119 Matt Metal Khaki Green</button>
+      <button class="btn" style="background:#B4945A">#120 Matt Metal Bronze</button>
+      <button class="btn" style="background:#B1BC55">#121 Matt Metal Chartreuse Green</button>
+      <button class="btn" style="background:#D2BF37">#122 Matt Metal Shadow Gold</button>
+      <button class="btn" style="background:#BB8D6F">#123 Matt Metal Gold Brown</button>
+      <button class="btn" style="background:#CBA3B2">#124 Matt Metal Rose Gold</button>
+      <button class="btn" style="background:#a29259">#125 Matt Metal Desert Yellow</button>
+      <button class="btn" style="background:#548696">#126 Matt Metal Blue With Gold</button>
+      <button class="btn" style="background:#F8CD02">#127 Matt Metal Racing Yellow</button>
+      <button class="btn" style="background:#b5ac9f">#128 Matt Metal Tungsten Steel</button>
+      <button class="btn" style="background:#545b62">#129 Matt Metal Titanium Grey</button>
+      <button class="btn" style="background:#65737e">#130 Matt Metal Space Grey</button>
+      <button class="btn" style="background:#A8A9AD">#131 Matt Metal AMG Grey</button>
+      <button class="btn" style="background:#677986">#132 Matt Metal Deep Grey</button>
+      <button class="btn" style="background:#818589">#133 Matt Metal Gun Grey</button>
+      <button class="btn" style="background:#808f95">#134 Matt Metal Knight Gray</button>
+      <button class="btn" style="background:#060505">#135 Matt Metal Extreme Black</button>
+      <button class="btn" style="background:#423a3a">#136 Matt Metal Ceramic black</button>
+      <button class="btn" style="background:#000000">#137 Matt Metal Black</button>
+      <button class="btn light" style="background:#F8F6F0">#138 Pearl White</button>
+      <button class="btn" style="background:#799975">#139 Sonoma Green</button>
+      <button class="btn" style="background:#0a674f">#140 Galaxy Green</button>
+      <button class="btn" style="background:#32527b">#141 Blue Metallic</button>
+      <button class="btn" style="background:#83041e">#142 Black Cherry</button>
+      <button class="btn" style="background:#CC252C">#143 Liqid Cherry Red</button>
+      <button class="btn" style="background:#9e0200">#144 Liqid Dragon Red</button>
+      <button class="btn" style="background:#51232C">#145 Black Rose</button>
+      <button class="btn" style="background:#db4f2f">#146 Speed Orange</button>
+      <button class="btn" style="background:#75B0C6">#147 ByronBay Blue</button>
+      <button class="btn" style="background:#9f9999">#148 Selenite Grey</button>
+
+     <button class="btn" style="background:#b5ac9f">#149 Tungsten Steel PPF</button>
+ <button class="btn" style="background:#818589">#150 Liqid Gun Grey PPF</button>
+ <button class="btn" style="background:#713600">#151 Chocolate PPF</button>
+    </div>
+  </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const tg = window.Telegram && window.Telegram.WebApp ? window.Telegram.WebApp : null;
+
+  if (!tg) {
+    console.warn('Telegram WebApp object not found. Контент будет работать, но sendData не доступен.');
+    return;
+  }
+
+  // Разворачиваем WebApp, если нужно
+  try { tg.expand(); } catch (e) { console.warn('tg.expand() failed', e); }
+
+  document.querySelectorAll('.btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      try {
+        // Берём текст кнопки — аккуратно убираем лишние пробелы
+        const text = btn.textContent.trim();
+
+        // Отправляем строку в бота. Можно отправлять JSON.stringify({text}) если нужно.
+        tg.sendData(text);
+
+        // Короткая задержка чтобы дать время отправке — 150..300 ms обычно достаточно.
+        setTimeout(() => {
+          try { tg.close(); } catch (e) { /* ignore */ }
+        }, 250);
+
+        // Визуальная обратная связь
+        btn.style.transform = 'scale(0.95)';
+        setTimeout(() => btn.style.transform = '', 150);
+
+      } catch (err) {
+        console.error('Ошибка при отправке данных в бота:', err);
+      }
+    });
+  });
+});
+</script>
+
+</body>
+
+</html>
